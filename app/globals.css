@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans bg-white text-slate-900;
+}
+
+.prose-finance {
+  @apply prose prose-slate max-w-3xl prose-headings:font-semibold prose-a:text-brand hover:prose-a:text-brand-dark prose-img:rounded-xl;
+}
+
