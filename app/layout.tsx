@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
+  verification: {
+    google: 'HHqwUx-E-hWc9HIzNNdUJrBFctyTory1aAlOdFgOKuw',
+  },
   metadataBase: new URL('https://www.example-finance-blog.com'),
   title: {
     default: 'Yashwanth S: Value Research - Practical Stock Market & Finance Insights',
