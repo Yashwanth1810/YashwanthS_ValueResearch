@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   verification: {
     google: 'HHqwUx-E-hWc9HIzNNdUJrBFctyTory1aAlOdFgOKuw',
   },
-  metadataBase: new URL('https://www.example-finance-blog.com'),
+  metadataBase: new URL('https://yashwanths.in'),
   title: {
     default: 'Yashwanth S: Value Research - Practical Stock Market & Finance Insights',
     template: '%s | Yashwanth S: Value Research',
