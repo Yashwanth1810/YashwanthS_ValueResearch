@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://yashwanths.in'),
   title: {
-    default: 'Yashwanth S: Value Research - Practical Stock Market & Finance Insights',
+    default: 'Yashwanth S: Valued Research Insights - Practical Stock Market & Finance Insights',
     template: '%s | Yashwanth S: Value Research',
   },
   description:
-    'Simple, practical articles on stocks, IPOs, mutual funds, and personal finance for Indian retail investors.',
+    'Valued Research Insights by Yashwanth S - Simple, practical articles on stocks, IPOs, mutual funds, and personal finance for Indian retail investors.',
   openGraph: {
-    title: 'Yashwanth S: Value Research - Practical Stock Market & Finance Insights',
+    title: 'Yashwanth S: Valued Research Insights - Practical Stock Market & Finance Insights',
     description:
       'Simple, practical articles on stocks, IPOs, mutual funds, and personal finance.',
     type: 'website',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Yashwanth S: Value Research - Practical Stock Market & Finance Insights',
+    title: 'Yashwanth S: Valued Research Insights - Practical Stock Market & Finance Insights',
     description:
       'Simple, practical articles on stocks, IPOs, mutual funds, and personal finance.',
   },
