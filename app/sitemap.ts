@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllBlogs } from '@/lib/mdx';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.example-finance-blog.com';
+  const baseUrl = 'https://yashwanths.in';
   const posts = getAllBlogs();
 
   return [
@@ -20,10 +20,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...posts.map((post) => ({
       url: `${baseUrl}/blog/${post.frontmatter.slug}`,
-      lastModified: new Date(post.frontmatter.date),
+      lastModified: post.frontmatter.date
+        ? new Date(post.frontmatter.date)
+        : new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     })),
   ];
 }
-
