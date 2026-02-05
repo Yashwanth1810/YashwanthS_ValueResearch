@@ -58,7 +58,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
           <div>
             <header>
               <p className="text-xs font-medium uppercase tracking-[0.14em] text-brand">
-                {post.frontmatter.category.replace('-', ' ')}
+                {(post.frontmatter.category ?? 'finance').replace('-', ' ')}
               </p>
               <h1 className="mt-2 text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
                 {post.frontmatter.title}

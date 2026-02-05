@@ -5,6 +5,7 @@ const categories = [
   { href: '/blog?category=ipo', label: 'IPO' },
   { href: '/blog?category=mutual-funds', label: 'Mutual Funds' },
   { href: '/blog?category=finance-basics', label: 'Finance Basics' },
+  { href: '/about', label: 'About'},
 ];
 
 export function Navbar() {
@@ -19,7 +20,7 @@ export function Navbar() {
             Yashwanth S: Value Research
           </span>
         </Link>
-        <nav className="hidden items-center gap-6 text-sm text-slate-700 md:flex">
+        <nav className="flex items-center gap-6 text-sm text-slate-700 md:flex">
           {categories.map((cat) => (
             <Link
               key={cat.href}
