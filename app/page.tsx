@@ -73,8 +73,11 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="mt-4 grid gap-4 md:grid-cols-3">
-            {latest.map((post) => (
-              <BlogCard key={post.frontmatter.slug} post={post.frontmatter} />
+            {latest.map((post, index) => (
+              <BlogCard
+                key={post.frontmatter.slug ?? `post-${index}`}
+                post={post.frontmatter}
+              />
             ))}
           </div>
         </section>

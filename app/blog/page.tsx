@@ -63,8 +63,11 @@ export default async function BlogIndexPage({ searchParams }: BlogIndexProps) {
         </header>
 
         <div className="grid gap-4 md:grid-cols-3">
-          {paginated.map((post) => (
-            <BlogCard key={post.frontmatter.slug} post={post.frontmatter} />
+          {paginated.map((post, index) => (
+            <BlogCard
+              key={post.frontmatter.slug ?? `post-${index}`}
+              post={post.frontmatter}
+            />
           ))}
         </div>
 

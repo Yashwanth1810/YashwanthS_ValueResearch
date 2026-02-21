@@ -101,8 +101,8 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
                   Related articles
                 </h2>
                 <ul className="mt-3 space-y-2 text-sm">
-                  {related.map((rel) => (
-                    <li key={rel.frontmatter.slug}>
+                  {related.map((rel, index) => (
+                    <li key={rel.frontmatter.slug ?? `rel-${index}`}>
                       <Link
                         href={`/blog/${rel.frontmatter.slug}`}
                         className="text-slate-700 hover:text-brand"

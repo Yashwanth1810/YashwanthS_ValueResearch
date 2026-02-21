@@ -6,6 +6,7 @@ const categories = [
   { href: '/blog?category=mutual-funds', label: 'Mutual Funds' },
   { href: '/blog?category=finance-basics', label: 'Finance Basics' },
   { href: '/about', label: 'About'},
+  { href: '/calculators', label: 'Calculators' },
 ];
 
 export function Navbar() {
