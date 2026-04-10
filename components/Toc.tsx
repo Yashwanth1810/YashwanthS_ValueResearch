@@ -19,10 +19,11 @@ export function Toc({ items }: TocProps) {
       <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
         On this page
       </div>
+
       <ul className="mt-3 space-y-1">
-        {items.map((item) => (
+        {items.map((item, index) => (
           <li
-            key={item.id}
+            key={`${item.id}-${index}`}
             className={item.level === 2 ? 'font-medium' : 'pl-3 text-xs'}
           >
             <a
@@ -37,4 +38,3 @@ export function Toc({ items }: TocProps) {
     </nav>
   );
 }
-
