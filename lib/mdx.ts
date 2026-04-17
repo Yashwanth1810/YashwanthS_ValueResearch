@@ -32,10 +32,24 @@ export function getBlogBySlug(slug: string): BlogPost | null {
 
 export function getAllBlogs(): BlogPost[] {
   const slugs = getBlogSlugs();
+
   const posts = slugs
-    .map((slug) => getBlogBySlug(slug))
+    .map((slug) => {
+      const post = getBlogBySlug(slug);
+      if (!post) return null;
+
+      return {
+        frontmatter: {
+          ...post.frontmatter,
+          slug, // ✅ this fixes everything
+        },
+        content: post.content,
+      };
+    })
     .filter((post): post is BlogPost => post !== null)
-    .sort((a, b) => (a.frontmatter.date < b.frontmatter.date ? 1 : -1));
+    .sort((a, b) =>
+      a.frontmatter.date < b.frontmatter.date ? 1 : -1
+    );
+
   return posts;
 }
-
