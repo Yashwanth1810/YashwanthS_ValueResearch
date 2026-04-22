@@ -66,7 +66,7 @@ export default function PortfolioPreview() {
       </h1>
 
       <p style={{ color: "#475569", marginBottom: "15px" }}>
-        Final-year CSE student building real-world projects using Python, React and APIs.
+        Final-year CSE student building real-world applications using Python, React, APIs, and Machine Learning.
       </p>
 
       <div style={{ display: "flex", gap: "12px",alignItems: "center", flexWrap: "nowrap" }}>

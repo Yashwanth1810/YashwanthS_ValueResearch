@@ -376,11 +376,11 @@ function Hero() {
         </h1>
 
         <p style={{ fontSize: "clamp(16px, 2.5vw, 21px)", color: "#2563eb", fontWeight: 600, marginBottom: 22, animation: "fadeUp 0.55s ease 0.14s both" }}>
-          Software Engineer &nbsp;·&nbsp; Python &nbsp;·&nbsp; React
+          Software Engineer &nbsp;·&nbsp; Python &nbsp;·&nbsp; React &nbsp;·&nbsp; Machine Learning &nbsp;·&nbsp; APIs
         </p>
 
         <p style={{ fontSize: 16, color: "#64748b", lineHeight: 1.8, maxWidth: 520, margin: "0 auto 44px", animation: "fadeUp 0.55s ease 0.2s both" }}>
-          Final-year CSE student building real-world applications with Python, REST APIs, and modern web technologies — focused on clean code and scalable solutions.
+          Final-year CSE student building real-world applications with Python, React, Machine Learning, APIs, and modern web technologies — focused on clean code and scalable solutions.
         </p>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", animation: "fadeUp 0.55s ease 0.26s both" }}>
