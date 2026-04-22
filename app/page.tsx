@@ -1,3 +1,4 @@
+import PortfolioPreview from '@/components/PortfolioPreview';
 import Link from 'next/link';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
@@ -15,6 +16,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
+      <PortfolioPreview />
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 pb-12 pt-6 lg:px-6 lg:pt-8">
         <section className="grid gap-8 md:grid-cols-[1.4fr,1fr] md:items-start">
           <div>
