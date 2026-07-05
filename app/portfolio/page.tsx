@@ -157,23 +157,45 @@ interface Project { title: string; stack: string[]; bullets: string[]; live?: st
 interface SkillGroup { label: string; items: string[]; }
 
 const SKILLS: SkillGroup[] = [
-  { label: "Languages",  items: ["Python", "Java", "SQL"] },
-  { label: "Web",        items: ["HTML", "CSS", "JavaScript", "React"] },
-  { label: "Backend",    items: ["REST APIs", "Application Logic", "CSV Handling"] },
-  { label: "Tools",      items: ["Git", "GitHub", "Streamlit", "AWS (basics)", "VS Code"] },
-  { label: "Concepts",   items: ["OOP", "DSA", "SDLC", "Debugging", "Problem Solving"] },
+  { label: "Languages",  items: ["Python", "SQL(MySQL)"] },
+  { label: "BI and Visualization",        items: ["Microsoft Excel", "Power BI","Tableau", "Matplotlib", "Seaborn"] },
+  { label: "Data Processing",    items: ["EDA", "Pandas","Numpy","REST APIs", "CSV Handling"] },
+  { label: "Cloud and Tools",      items: ["AWS", "Microsoft Azure","Databricks","Git", "GitHub", "Streamlit", "VS Code"] },
+  { label: "Concepts",   items: ["ETL", "KPI Reporting", "Business Intelligence", "Data Wrangling", "Statistics","Problem Solving"] },
 ];
 
 const PROJECTS: Project[] = [
   {
-    title: "Personal Expense Tracker",
-    stack: ["Python", "Streamlit", "OOP", "CSV", "ReportLab"],
+    title: "Data Professionals Survey Analysis",
+    stack: ["PowerBI", "DAX", "KPI Design", "CSV", "Excel"],
     bullets: [
-      "Built a full-featured web app with modular OOP architecture — structured classes for expense categories, budget logic, and data processing.",
-      "Implemented CSV-based persistent storage, dynamic budget calculations, and automated PDF report generation using ReportLab.",
+      "Business Problem: Organisations lacked visibility into salary benchmarks, programming language preferences, work-life balancescores, and employee satisfaction trends across data roles globally.",
+      "Solution: Designed an interactive Power BI dashboard using real survey data — built KPI cards, stacked bar charts, and gauge visuals to surface salary distributions, demographic breakdowns, and satisfaction metrics across job titles and countries.",
+      "Business Impact: Enabled HR and talent teams to identify workforce patterns at a glance, supporting faster and more informed hiring and compensation planning decisions."
+    ]
+    // ,
+    // live: "https://personalexpensetrackergit-j5zzfm8rsthjty5atrbfgw.streamlit.app",
+    // liveLabel: "Open App",
+  },
+  {
+    title: "Cryptocurrency Market Data Pipeline",
+    stack: ["Python", "Pandas", "JSON","CoinMarketcap API", "Microsoft Excel","Automation", "Web Scraping"],
+    bullets: [
+      " Business Problem: Financial analysts required continuously refreshed cryptocurrency market data for trend monitoring and investment research — manual collection was time-consuming and error-prone.",
+      "Solution: Developed an automated Python pipeline using the CoinMarketCap REST API — transformed and normalised data with Pandas, and stored structured historical datasets for downstream analytics and dashboarding.",
+      "Business Impact: Eliminated manual data collection effort, created reusable analysis-ready datasets, and demonstrated end-toend data engineering workflow applicable to financial analytics environments."
     ],
-    live: "https://personalexpensetrackergit-j5zzfm8rsthjty5atrbfgw.streamlit.app",
-    liveLabel: "Open App",
+    // live: "https://grocery-list-react-nu.vercel.app",
+    // liveLabel: "Live Demo",
+  },
+  {
+    title: "Bike Sales Customer Segmentation Analysis",
+    stack: ["Microsoft Excel", "Pivot Tables", "Slicers"],
+    bullets: [
+      "Business Problem: A retail company lacked insight into which customer segments — defined by age, income, education, and region — were most likely to purchase, leading to unfocused marketing spend.",
+      "Solution: Cleaned raw customer data using Excel, engineered age bracket and income tier columns, and built a dynamic dashboard with Pivot Tables, Pivot Charts, and slicers to segment buyers vs non-buyers across demographics.",
+      "Business Impact: Surfaced high-conversion customer profiles, enabling targeted marketing campaigns and reducing wasted outreach budget."
+    ]
   },
   {
     title: "Portfolio & Blog Website",
@@ -184,30 +206,12 @@ const PROJECTS: Project[] = [
     ],
     live: "https://yashwanths.in",
     liveLabel: "Visit Site",
-  },
-  {
-    title: "Grocery Management System",
-    stack: ["React", "JavaScript", "Vercel"],
-    bullets: [
-      "Built a React-based CRUD web application with structured data flow, input validation, and an intuitive grocery management interface.",
-      "Deployed on Vercel — demonstrating end-to-end ownership from development through production.",
-    ],
-    live: "https://grocery-list-react-nu.vercel.app",
-    liveLabel: "Live Demo",
-  },
-  {
-    title: "Customer Churn Prediction",
-    stack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
-    bullets: [
-      "Developed a supervised ML model to predict customer churn from structured business datasets using classification algorithms.",
-      "Performed data preprocessing, feature selection, and model evaluation — practical end-to-end ML workflow understanding.",
-    ],
-  },
+  }
 ];
 
 const CERTS = [
-  "Python Foundation Certification – Infosys Springboard",
-  "Applied Generative AI Certification – Infosys Springboard",
+  "Data Analyst Bootcamp 2026 – Alex The Analyst"
+  // "Applied Generative AI Certification – Infosys Springboard",
 ];
 
 const NAV_LINKS = ["About", "Skills", "Projects", "Education", "Contact"];
@@ -376,11 +380,11 @@ function Hero() {
         </h1>
 
         <p style={{ fontSize: "clamp(16px, 2.5vw, 21px)", color: "#2563eb", fontWeight: 600, marginBottom: 22, animation: "fadeUp 0.55s ease 0.14s both" }}>
-          Software Engineer &nbsp;·&nbsp; Python &nbsp;·&nbsp; React &nbsp;·&nbsp; Machine Learning &nbsp;·&nbsp; APIs
+          Aspiring Data Analyst &nbsp;·&nbsp; SQL &nbsp;·&nbsp; Python &nbsp;·&nbsp; Power BI &nbsp;·&nbsp; Microsoft Excel &nbsp;·&nbsp; Tableau
         </p>
 
         <p style={{ fontSize: 16, color: "#64748b", lineHeight: 1.8, maxWidth: 520, margin: "0 auto 44px", animation: "fadeUp 0.55s ease 0.2s both" }}>
-          Final-year CSE student building real-world applications with Python, React, Machine Learning, APIs, and modern web technologies — focused on clean code and scalable solutions.
+          Computer Science graduate passionate about transforming data into actionable business insights. Skilled in SQL, Python, Excel, Power BI, data cleaning, exploratory data analysis (EDA), and interactive dashboard development using real-world datasets.
         </p>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", animation: "fadeUp 0.55s ease 0.26s both" }}>
@@ -410,13 +414,13 @@ function About() {
         <FadeIn><SectionHeader eyebrow="01 — About" title="Who I Am" /></FadeIn>
         <FadeIn delay={100}>
           <p style={{ fontSize: 15.5, color: "#475569", lineHeight: 1.9, marginBottom: 16 }}>
-            I&apos;m a final-year Computer Science Engineering student at Atria Institute of Technology, Bengaluru (CGPA: 8.11), with a strong foundation in <strong style={{ color: "#0f172a" }}>Python, OOP, and REST APIs</strong>.
+            I&apos;m a Computer Science Engineering student from Atria Institute of Technology, Bengaluru (CGPA: 8.11), with a strong foundation in <strong style={{ color: "#0f172a" }}>SQL,Python,Excel,Power BI,Tableau</strong>.
           </p>
           <p style={{ fontSize: 15.5, color: "#475569", lineHeight: 1.9, marginBottom: 16 }}>
-            I build real-world applications — from expense trackers to ML pipelines — focusing on clean architecture and maintainable code. Drawn to backend engineering and scalable system design.
+            I have hands-on experience in data cleaning, exploratory data analysis (EDA), and building interactive dashboards using real-world datasets. I&apos;m passionate about transforming raw data into actionable insights that drive business decisions.
           </p>
           <p style={{ fontSize: 15.5, color: "#475569", lineHeight: 1.9 }}>
-            Outside of projects, I write technical blog posts and actively practice DSA. <strong style={{ color: "#0f172a" }}>Available immediately</strong> for full-time roles in Bengaluru.
+           Passionate about data analysis and visualization. <strong style={{ color: "#0f172a" }}>Available immediately</strong> for full-time roles in Bengaluru.
           </p>
         </FadeIn>
       </div>
@@ -618,7 +622,7 @@ function Footer() {
     <footer style={{ borderTop: "1px solid #f1f5f9", padding: "28px 24px", textAlign: "center", background: "#f8fafc" }}>
       {/* ✅ FIX 5: copyright 2026 */}
       <p style={{ fontSize: 13, color: "#94a3b8", fontFamily: "monospace", letterSpacing: 0.5 }}>
-        © 2026 Yashwanth S — Built with Next.js & Tailwind CSS
+        © 2026 Yashwanth S
       </p>
     </footer>
   );

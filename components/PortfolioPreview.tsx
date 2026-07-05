@@ -66,7 +66,7 @@ export default function PortfolioPreview() {
       </h1>
 
       <p style={{ color: "#475569", marginBottom: "15px" }}>
-        Final-year CSE student building real-world applications using Python, React, APIs, and Machine Learning.
+        Computer Science graduate passionate about transforming data into actionable business insights. Skilled in SQL, Python, Excel, Power BI, data cleaning, exploratory data analysis (EDA), and interactive dashboard development using real-world datasets.
       </p>
 
       <div style={{ display: "flex", gap: "12px",alignItems: "center", flexWrap: "nowrap" }}>
@@ -88,8 +88,8 @@ export default function PortfolioPreview() {
 
         {/* ✅ FIX 2: Force download */}
         <a
-          href="/Yashwanth_S_Resume.pdf"
-          download="Yashwanth_S_Resume.pdf"
+          href="/Yashwanth_S_DataAnalyst_Resume_g.pdf"
+          download="Yashwanth_S_DataAnalyst_Resume_g.pdf"
           style={{
             padding: "10px 16px",
             background: "#0f172a",
