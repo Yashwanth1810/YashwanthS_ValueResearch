@@ -341,7 +341,7 @@ function Navbar() {
             🌐 yashwanths.in
           </a>
 
-          <a href="/Yashwanth_S_Resume.pdf" download
+          <a href="/Yashwanth_S_DataAnalyst_Resume_g.pdf" download
             style={{ fontSize: 14, color: "#1d4ed8", fontWeight: 700, textDecoration: "none", padding: "4px 0" }}>
             ↓ Download Resume
           </a>
