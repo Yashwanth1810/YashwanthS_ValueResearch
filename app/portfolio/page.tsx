@@ -301,7 +301,7 @@ function Navbar() {
             🌐 yashwanths.in
           </a>
 
-          <a href="/Yashwanth_S_Resume.pdf" download
+          <a href="/Yashwanth_S_DataAnalyst_Resume_g.pdf" download
             style={{ fontSize: 13, padding: "8px 16px", background: "#1d4ed8", color: "#fff", borderRadius: 8, fontWeight: 700, textDecoration: "none", whiteSpace: "nowrap" }}>
             Resume ↓
           </a>
@@ -384,7 +384,7 @@ function Hero() {
         </p>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", animation: "fadeUp 0.55s ease 0.26s both" }}>
-          <a href="/Yashwanth_S_Resume.pdf" download
+          <a href="/Yashwanth_S_DataAnalyst_Resume_g.pdf" download
             style={{ padding: "14px 28px", background: "#1d4ed8", color: "#fff", borderRadius: 10, fontWeight: 700, fontSize: 15, textDecoration: "none", boxShadow: "0 4px 16px rgba(29,78,216,0.3)" }}>
             ↓ Download Resume
           </a>
