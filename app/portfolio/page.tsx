@@ -420,7 +420,7 @@ function About() {
             I have hands-on experience in data cleaning, exploratory data analysis (EDA), and building interactive dashboards using real-world datasets. I&apos;m passionate about transforming raw data into actionable insights that drive business decisions.
           </p>
           <p style={{ fontSize: 15.5, color: "#475569", lineHeight: 1.9 }}>
-           Passionate about data analysis and visualization. <strong style={{ color: "#0f172a" }}>Available immediately</strong> for full-time roles in Bengaluru.
+           Passionate about data analysis and visualization. <strong style={{ color: "#0f172a" }}>Available immediately</strong> for full-time roles.
           </p>
         </FadeIn>
       </div>
