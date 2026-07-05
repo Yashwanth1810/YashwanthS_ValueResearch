@@ -475,7 +475,7 @@ function Projects() {
                       {p.liveLabel} ↗
                     </a>
                   ) : (
-                    <span style={{ flexShrink: 0, fontSize: 11, padding: "5px 12px", background: "#f8fafc", color: "#94a3b8", border: "1px solid #e2e8f0", borderRadius: 99, fontFamily: "monospace" }}>ML Model</span>
+                    <span style={{ flexShrink: 0, fontSize: 11, padding: "5px 12px", background: "#f8fafc", color: "#94a3b8", border: "1px solid #e2e8f0", borderRadius: 99, fontFamily: "monospace" }}>Dashboard</span>
                   )}
                 </div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 16 }}>
